@@ -37,3 +37,6 @@ hs_err_pid*
 # Locks #
 
 **.*~
+
+!/libs/*.jar
+!/libs/*.zip
