@@ -15,6 +15,6 @@ dependencies {
     compile group: 'org.slf4j', name: 'slf4j-api', version: '1.7.21'
     
     // libraries without maven releases
-    compile fileTree(dir: "libs", includes: ["*.jar"])
+    compile fileTree(dir: "libs", includes: ["*.jar", "*.zip"])
 }
 
