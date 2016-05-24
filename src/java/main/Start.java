@@ -47,9 +47,9 @@ public class Start {
 				GLFW.glfwWindowHint(GLFW.GLFW_OPENGL_PROFILE, GLFW.GLFW_OPENGL_CORE_PROFILE);
 				GLFW.glfwWindowHint(GLFW.GLFW_OPENGL_FORWARD_COMPAT, GL11.GL_TRUE);				
 				
-				Window window = new Window("CellAI", 500, 600);
+				Window window = new Window("CellAI", 500, 500);
 				window.makeContextCurrent();
-				System.out.println(GLFW.glfwGetCurrentContext());
+
 				GL.createCapabilities();
 
 				window.init();
