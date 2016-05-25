@@ -5,5 +5,5 @@ out vec3 genColor;
 
 void main() {
 	gl_Position = vec4(pos, 0.0, 1.0);
-	genColor = vec3(pos.x, pos.y, pos.x * 2);
+	genColor = vec3(pos.x + 0.5, pos.y + 0.5, pos.x + 0.75);
 }

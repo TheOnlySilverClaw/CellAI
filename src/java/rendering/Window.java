@@ -3,9 +3,8 @@ package rendering;
 import org.lwjgl.glfw.GLFW;
 import org.lwjgl.opengl.GL11;
 
-import rendering.meshes.IndexMesh;
 import rendering.meshes.Mesh;
-import rendering.meshes.QuadMesh;
+import rendering.meshes.OctagonalMesh;
 
 import static org.lwjgl.system.MemoryUtil.NULL;
 
@@ -22,7 +21,8 @@ public class Window {
 	
 	public void init() {
 		
-		testMesh = QuadMesh.screenCentered(0.25f);
+		GL11.glClearColor(0.1f, 0.1f, 0.1f, 1f);
+		testMesh = new OctagonalMesh(0.25f);
 
 	}
 	
